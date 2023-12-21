@@ -122,8 +122,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  if (timer_flag[0] == 1) {
-	  		  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  		  setTimer(0, 1000);
+		  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+		  setTimer(0, 1000);
 	  }
 	  // If received byte, call command_parser_fsm function
 	  if (buffer_flag == 1) {
